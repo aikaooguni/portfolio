@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ポートフォリオサイトです。">
+    <link rel="icon" href="images/ファビコン.png">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body id="top">
+<div class="navs">
+    <div class="nav home-btn">
+        <a href="index.html">
+          <img src="images/homebutton.png" alt="homeボタン" class="home-icon">
+            HOME
+        </a>
+    </div>
+    <div class="nav">
+        <a href="about.html">about</a>
+    </div>
+    <div class="nav">
+        <a href="works.html">works</a>
+    </div>
+    <div class="nav">
+        <a href="contact.html">contact</a>
+    </div>
+</div>
+        </div>
+<div class="top-bg"></div>
+
+<!-- 音楽ファイル -->
+<audio id="bgm" src="indexmelody.mp3" loop></audio>
+
+<!-- 再生・停止ボタン -->
+<button class="music-btn" onclick="toggleMusic()">➤</button>
+
+<script>
+let isPlaying = false;
+
+function toggleMusic() {
+  const audio = document.getElementById('bgm');
+  const btn = document.querySelector('.music-btn');
+
+  if (isPlaying) {
+    audio.pause();
+    btn.textContent = '➤';
+  } else {
+    audio.play();
+    btn.textContent = '■';
+  }
+
+  isPlaying = !isPlaying;
+}
+</script>
+
+    <!-- ヘッダー -->
+    <header>
+    
+        
+    </header>
+    <!-- ヘッダーここまで -->
+    
+
+    <!-- メイン -->
+     
+    <main>
+  
+    </main>
+ <!-- メイン　ここまで -->
+ 
+</div>
+    <footer>
+         <p class="copyright">&copy; AIKA OGUNI</p>
+    </footer>
+<!-- フッターここまで -->
+</body>
+</html>
