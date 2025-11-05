@@ -1,1 +1,0 @@
-# aikaoguni.github.io
